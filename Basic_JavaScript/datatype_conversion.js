@@ -11,3 +11,10 @@ console.log(number);
 //"33eee"=>give NaN(not a number) using Number method
 //null=>give 0
 //undefined=>give NaN using Number method
+
+
+//DataType ->
+//number
+//boolean
+//string
+//undefined
