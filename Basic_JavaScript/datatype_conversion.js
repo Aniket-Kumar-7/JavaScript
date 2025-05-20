@@ -23,6 +23,13 @@ let number3="";//give false on empty string otherwise give true
 number3=Boolean(number3);//convert the boolean number true or false 
 console.log(number3)
 
+
+let id = Symbol(123)//define the unique id for every variable
+let anotherid=Symbol(123)
+
+console.log("id output",anotherid==id)//gives false
+
+
 //DataType ->
 //number
 //boolean
