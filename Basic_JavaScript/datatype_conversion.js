@@ -12,6 +12,16 @@ console.log(number);
 //null=>give 0
 //undefined=>give NaN using Number method
 
+let number2=23;
+
+number2=String(number2)//convert number as a string 
+console.log(typeof(number2))
+console.log(number2)
+
+
+let number3="";//give false on empty string otherwise give true
+number3=Boolean(number3);//convert the boolean number true or false 
+console.log(number3)
 
 //DataType ->
 //number
