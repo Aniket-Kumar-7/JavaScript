@@ -29,6 +29,9 @@ let anotherid=Symbol(123)
 
 console.log("id output",anotherid==id)//gives false
 
+const array=["aniket","Kumar","sai"]
+console.log(array)
+
 
 //DataType ->
 //number
