@@ -56,11 +56,26 @@ const c = { e: 'e', f: 'f' }
 const d = { ...a, ...b, ...c }
 console.log(d)
 
-const myArray = [
-    { name: "John", age: 30 },
-    { name: "Jane", age: 25 },
-    { name: "Peter", age: 35 }
-];
+const arr=[
+    {myname:"Aniket "},
+    {myvillage:"Sai"},
+    {
+        mycollege:"MNNIT"
+    }
+]
 
-const secondObject = myArray[1];
-console.log(secondObject); 
+console.log(arr[0].myname)
+
+console.log(Object.values(user))
+console.log(Object.keys(person))
+console.log(user.hasOwnProperty("college"))
+
+// Desturcturing of object
+const information={
+    laptop:true,
+    iphone:false,
+    ipad:false
+}
+
+const {iphone:phone} =information
+console.log(phone)
