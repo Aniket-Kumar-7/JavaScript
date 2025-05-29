@@ -22,7 +22,7 @@ function print(anything){
 // console.log(print({
 //     name:"Aniket",
 //     age:20
-// }))
+// })
 
 
 function print_Element(array){
@@ -30,7 +30,7 @@ function print_Element(array){
 }
 
 const array=[100,100,200]
-console.log(print_Element(array)) 
+// console.log(print_Element(array)) 
 
 
 //example of  variable function
@@ -47,8 +47,35 @@ const sum=function(...numbers){
 const person ={
     name :"Aniket",
     id:20233052,
-    message:function(message){
-        return `hello! ${this.name} how are you! I hope you'r well.`
+    message:function(){
+        console.log(`hello! ${this.name} how are you! I hope you'r well.`)
+        console.log(this)
     }
 }
+// person.name="Anni"
+// console.log(person.message())
 
+// console.log(this)
+
+
+//arrow function
+const arrow_function=()=>{
+    const myname="Aniket"
+    console.log(myname)
+}
+
+// arrow_function()
+
+// if you have only one line operation
+const number_add=(number1,number2)=>(number1+number2);
+// console.log(number_add(5,5))
+
+// IIFE ()()
+//always remember the ; for ending the function 
+(function newprogram(){
+    console.log(`I am Aniket Kumar.`)
+})();
+
+(function(){console.log("hello ")})();
+
+((name)=>{console.log(`hello.... ${name}`)})("Aniket");
