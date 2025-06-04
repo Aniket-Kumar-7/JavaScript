@@ -33,3 +33,41 @@ const my_object={
 for(const key in my_object){
     console.log(`${key} and value is ${my_object[key]}`)
 }
+
+
+// example of for each function
+const language=['js','java','python','cpp']
+language.forEach(function(value){
+    // console.log(value)
+})
+
+language.forEach(print)
+
+function print(item){
+    console.log(item)
+}
+
+const my_array=[
+    {
+        my_name:"Aniket",
+        my_college:"don't"
+    }
+    ,{
+        my_name:"don't",
+        my_college:"i Know"
+    }
+]
+
+my_array.forEach((item)=>{
+    console.log(item.my_college,item.my_name);
+    
+})
+
+
+// use of filter in array
+
+const new_array=[2,3,4,5,6,4,4,5,5]
+
+console.log(new_array.filter((item)=>{
+    return item%2===0
+}))
