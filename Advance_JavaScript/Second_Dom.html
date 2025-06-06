@@ -1,1 +1,72 @@
-documet is j
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second_DOM</title>
+    <style>
+        .black-page {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="black-page">
+
+    <ol type="A" class="last-list">
+        <li>Aniket</li>
+        <li>Kumar</li>
+        <li>Library</li>
+        <li>Mallawan</li>
+    </ol>
+
+    <li class="new-list">Aniket Kumar</li>
+     <p>
+        <p class="paragraph">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita soluta ad, commodi ut voluptatum recusandae dolor omnis pariatur ipsum, perspiciatis velit provident et possimus quis itaque ratione amet. Accusantium, voluptas?
+     </p>
+     </p>
+</body>
+<script>
+    function addlanguage(language) {
+        const li = document.createElement('li')
+        li.innerHTML = `${language}`;
+        document.querySelector('.last-list').appendChild(li)
+    }
+    addlanguage("Python")
+
+    function addParagraph(paragraph){
+        const para=document.createElement('p')
+        para.innerHTML=`${paragraph}`
+        document.querySelector('.paragraph').append(para)
+    }
+    addParagraph("Aniket")
+
+
+    function addnewlist(content) {
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(content))
+        document.querySelector('.last-list').appendChild(li)
+    }
+    addnewlist("Aniket is a good learner.")
+
+    //editing of document page
+    const fourth=document.querySelector('li:nth-child(4)')
+    fourth.innerHTML="Aniket"
+
+    // const newlist=document.createElement('li')
+    // newlist.textContent ='Aniket kumar is a good learner.'
+    // fourth.replaceWith(newlist)
+
+    const second=document.querySelector('li:first-child')
+    second.outerHTML='<li>hacker</li>'
+
+    //remove element
+    const lastlist=document.querySelector('li:last-child')
+    lastlist.remove()
+    
+</script>
+
+</html>
