@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Learning</title>
+    <style>
+        .Body-color{            
+            color:rgb(236, 235, 235);
+            background-color:black;
+        }
+    </style>
+</head>
+<body class="Body-color">
+    <div class="Parent">
+        <div class="children">Monday</div>
+        <div class="children">Tuesday</div>
+        <div class="children">Wednesday</div>
+        <div class="children">Thursday</div>
+        <div class="c">Friday</div>
+    </div>
+</body>
+<script>
+    const Parent=document.querySelector('.Parent');
+    console.log(Parent)
+    console.log(Parent.children)
+    console.log(Parent.children[0].innerHTML)
+    console.log(Parent.children[1].innerHTML)
+    console.log(document.querySelector(".children"))
+    for (let index = 0; index < Parent.children.length; index++) {
+        console.log(Parent.children[index].innerHTML);
+    }
+
+    Parent.children[0].style.color="blue";
+    Parent.children[1].style.color="orange";
+    Parent.children[2].style.color="yellow";
+    Parent.children[3].style.color="green";
+
+    console.log(Parent.firstElementChild)
+    console.log(Parent.lastElementChild)
+
+    const children=document.querySelector(".children")
+    console.log(children.parentElement)
+    console.log(children.nextElementSibling)
+
+    console.log("Nodes",Parent.childNodes)
+
+
+    const div=document.createElement("div")
+    console.log(div)
+    div.id="first"
+    div.className=Math.round(Math.random()*10+1)
+
+    const add_Text=document.createTextNode("First adding Page for editing.")
+    
+    div.appendChild(add_Text)
+    div.style.color="black"
+    div.style.padding="20px"
+    div.style.background="white";
+    div.style.borderRadius="10px"
+    document.body.appendChild(div)
+</script>
+</html>
